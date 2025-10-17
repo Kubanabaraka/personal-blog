@@ -2,6 +2,7 @@
 // delete.php
 // Handles deletion of a blog post and redirects back to the homepage.
 
+require_once __DIR__ . '/includes/auth_check.php'; // Only logged-in users may delete posts.
 require_once __DIR__ . '/connection.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {

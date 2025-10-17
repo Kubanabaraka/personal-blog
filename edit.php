@@ -2,6 +2,7 @@
 // edit.php
 // Allows updating an existing blog post.
 
+require_once __DIR__ . '/includes/auth_check.php'; // Restrict editing to authenticated users.
 require_once __DIR__ . '/connection.php';
 
 $pageTitle = 'Edit Post';

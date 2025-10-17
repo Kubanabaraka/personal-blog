@@ -1,6 +1,5 @@
 <?php
 // index.php
-// Displays all blog posts in a card layout ordered by most recent first.
 
 require_once __DIR__ . '/connection.php';
 

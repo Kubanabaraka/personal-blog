@@ -2,6 +2,7 @@
 // add.php
 // Presents a form for creating a new blog post and saves it to the database upon submission.
 
+require_once __DIR__ . '/includes/auth_check.php'; // Protect this page so only authenticated users can add posts.
 require_once __DIR__ . '/connection.php';
 
 $pageTitle = 'Add Post';
